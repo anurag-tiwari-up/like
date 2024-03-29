@@ -19,8 +19,8 @@ body h1{
 
 .container{
     padding: 20px 15px 0 15px;
-    height: 430px;
-    width: 350px;
+    height: 420px;
+    width: 300px;
     background-color: white;
     position: relative;
     border-radius: 20px;
@@ -28,7 +28,7 @@ body h1{
 }
 .container img{
     height: 350px;
-    width: 350px;
+    width: 300px;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
