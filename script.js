@@ -5,7 +5,7 @@ var like_show = document.querySelector("#like_number span")
 
 
 var indicator=0
-var like_count=0
+var like_count=268
 
 action.addEventListener("dblclick", function(){
     like.style.transform="translate(-50%, -90%) scale(1)"
