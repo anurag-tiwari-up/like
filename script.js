@@ -1,17 +1,32 @@
 var action = document.querySelector(".container")
-var like = document.querySelector("i")
-a=0
-if(a<2)
-{
-    action.addEventListener("dblclick", function(){
-        like.style.transform="translate(-50%, -50%) scale(1)"
-        setTimeout(function(){
-            like.style.transform="translate(-50%, -50%) scale(0)"
-        },500);
-        setTimeout(function(){
-            like.style.opacity="0"
-        },800);
-    })
+var like = document.querySelector("#pop")
+var like_indicator = document.querySelector("#like_indicator")
+var like_show = document.querySelector("#like_number span")
 
-}
 
+var indicator=0
+var like_count=0
+
+action.addEventListener("dblclick", function(){
+    like.style.transform="translate(-50%, -90%) scale(1)"
+    setTimeout(function(){
+        like.style.transform="translate(-50%, -90%) scale(0)"
+    },400);
+    setTimeout(function(){
+        like.style.opacity="0"
+    },450);
+    like.style.opacity=".8"
+    if(indicator==0){
+        like_indicator.style.color="red"
+        indicator+=1;
+        like_count++
+        like_show.innerHTML=like_count
+    }
+    else{
+        like_indicator.style.color="pink"
+        indicator-=1;
+        like_count--;
+        like_show.innerHTML=like_count
+    }
+
+})

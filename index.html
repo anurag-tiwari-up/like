@@ -8,9 +8,14 @@
     <title>Like</title>
 </head>
 <body>
+    <!-- <h1>Double click on the picture once, to like it and again to undo the like. </h1> -->
     <div class="container">
         <img src="dog_portrait (1).jpg" alt="dog">
-        <i class="ri-heart-fill"></i>
+        <i class="ri-heart-fill" id="pop"></i>
+        <div class="like">
+            <i class="ri-heart-fill" id="like_indicator"></i>
+            <div id="like_number"><p><span>0</span> like</p></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
