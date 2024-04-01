@@ -29,7 +29,7 @@ body h1{
 .container img{
     height: 350px;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 3px;
     object-fit: cover;
     object-position: center;
     

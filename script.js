@@ -1,4 +1,4 @@
-var action = document.querySelector(".container")
+var action = document.querySelector("#dog")
 var like = document.querySelector("#pop")
 var like_indicator = document.querySelector("#like_indicator")
 var like_show = document.querySelector("#like_number span")
